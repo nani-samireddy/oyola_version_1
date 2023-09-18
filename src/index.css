@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply bg-[#fcfcfd];
+
+    }
+}
+
+@layer components{
+    .responsive-width{
+        @apply w-full px-[4%] lg:px-[7%] 2xl:px-20p 3xl:px-30p;
+    }
+    .header-gradient{
+        @apply bg-gradient-to-b from-[#ffffffec] to-[#fcfcfd00];
+    }
+
+    .input-component-icon{
+        @apply text-gray-700 p-1 h-7 lg:h-10 ;
+    }
+    .warning-text{
+        @apply text-red-500 text-xs font-poppins;
+    }
+
+   
+
+   /* preview card */
+   .preview-card{
+    @apply rounded-3xl h-max w-72  bg-white shadow-sm border-[.7px] ease-in-out duration-1000 border-transparent hover:border-blue-400 hover:shadow-lg hover:shadow-blue-100
+   }
+   .card:hover img{
+      @apply scale-125 duration-1000 ease-in-out;
+   }
+
+
+}
