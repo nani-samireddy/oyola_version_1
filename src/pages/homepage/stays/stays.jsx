@@ -7,12 +7,10 @@ import HowItWorks from "../../../common/components/how_it_works/how_it_works";
 
 export default function Stays() {
   const [staysTypes, hasData] = useContext(StaysTypesContext);
-
-  console.log(staysTypes);
   return (
     <div className="responsive-width ">
      <div className="relative h-max">
-       <div className="h-[40vh] lg:h-[65vh] relative flex flex-col mb-20 mt-10">
+       <div className="h-[40vh] lg:h-[65vh] relative flex flex-col mb-20 mt-10 -z-10">
         <img
           className=" h-full w-full object-cover rounded-2xl saturate-150 brightness-80"
           src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80"
@@ -50,19 +48,32 @@ export default function Stays() {
       <HowItWorks />
 
       {/* Booking form */}
-      <div className="flex flex-col justify-center items-center mt-20">
+      <div className="w-full flex flex-col justify-center items-center mt-20">
         <h2 className="text-5xl font-bold font-dm_sans text-gray-700 my-5 text-center">
                             Book your stay
                         </h2>
       <h2 className="text-2xl font-light font-dm_sans text-gray-400  text-center md:px-6 lg:px-24">
-                            Our executive will contact you within 24 hours to confirm your booking and payment
+                            Our executive will contact you within 24 hours to confirm your booking and payment details.
+                            Or you can call us at <a href="tel:+919391573374" className="text-gray-900 font-semibold">+91 9391573374</a>
                 </h2>
-        <form action="https://formsubmit.co/your@email.com" method="POST"  className="flex flex-col my-10">
+        <form action="https://formsubmit.co/vijaynaranji@gmail.com" method="POST"  className="flex flex-col my-10 w-full items-center justify-center ">
         <input type="hidden" name="_template" value="table"/>
         <input type="hidden" name="_subject" value="New Booking for stays!"/>
         <input type="text" name="Name" placeholder="Name" className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400" required/>
         <input type="email" name="Email" placeholder="Email" className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400" required/>
         <input  type="number" name="Phone" placeholder="Phone" className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400" required/>
+        <select name="Type" className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400" required>
+          <option value="" selected disabled hidden>select the serivce</option>
+          <option value="Stays">Stays</option>
+          <option value="Cars">Cars</option>
+          <option value="Trips">Trips</option>
+          <option value="Trekking">Trekking</option>
+          <option value="Camping">Camping</option>
+          <option value="Others">Others</option>
+        </select>
+        <textarea name="Message" placeholder="Message" className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400" required></textarea>
+        <button type="submit" className="w-full md:w-96 bg-gray-900 text-white rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400">Place a call back</button>
+
         </form>
         </div>
     </div>

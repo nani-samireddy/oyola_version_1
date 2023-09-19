@@ -130,10 +130,10 @@ export default function SearchComponent() {
           </Popover.Button>
 
           <Popover.Panel className="absolute z-10 ml-auto left-0 right-0">
-    <div className="p-6 rounded-2xl shadow-2xl bg-white">
+    <div className=" absolute ml-auto p-6 rounded-2xl shadow-2xl bg-white ">
 
       {/* Show month 1 on mobile screens */}
-      <div className="md:hidden"> 
+      <div className="md:hidden "> 
         <DateRange
           minDate={new Date()}
           showDateDisplay={false}
@@ -159,7 +159,7 @@ export default function SearchComponent() {
       </div>
 
       {/* Show month 2 on laptop screens */}
-      <div className="hidden md:block">
+      <div className="hidden md:block w-auto">
         <DateRange
           minDate={new Date()}
           showDateDisplay={false}
