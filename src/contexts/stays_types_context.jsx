@@ -49,16 +49,16 @@ const StaysTypesProvider = ({ children }) => {
     }
 ]
   ]);
-  const [hasData, setHasData] = useState(false);
+  const [hasData, setHasData] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await getStaysCountByType();
-      setStaysTypes(data);
-      setHasData(true);
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await getStaysCountByType();
+  //     setStaysTypes(data);
+  //     setHasData(true);
+  //   };
+  //   fetchData();
+  // }, []);
 
   return (
     <StaysTypesContext.Provider value={[staysTypes, hasData]}>
