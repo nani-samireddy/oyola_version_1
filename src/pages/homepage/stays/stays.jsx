@@ -27,7 +27,7 @@ export default function Stays() {
         </div>
         <div className="header-gradient h-full w-full absolute z-10 top-0 left-0 rounded-2xl"></div>
       </div>
-        <div className="  -mt-40 lg:-bottom-20 left-0 w-full flex justify-center items-center z-50 px-6">
+        <div className="  -mt-40 lg:-bottom-20 left-0 w-full flex justify-center items-center z-50 px-2">
           <div className="w-full   lg:w-max">
             <SearchComponent />
           </div>
