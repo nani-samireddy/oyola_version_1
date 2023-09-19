@@ -35,13 +35,11 @@ export default function Stays() {
      </div>
 
 
-         {hasData && (
-        <SectionComponent
+    <SectionComponent
           title="Explore stays by type"
           data={staysTypes}
           CardIcon={HomeModernIcon}
         />
-      )}
       {/* {!hasData && (
         <div className="flex justify-center items-center h-[50vh]">
           <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900"></div>
