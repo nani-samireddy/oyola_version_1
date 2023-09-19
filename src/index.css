@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @layer base{
+    /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
     body{
         @apply bg-[#fcfcfd];
 
@@ -31,7 +42,7 @@
     @apply rounded-3xl h-max w-72  bg-white shadow-sm border-[.7px] ease-in-out duration-1000 border-transparent hover:border-blue-400 hover:shadow-lg hover:shadow-blue-100
    }
    .card:hover img{
-      @apply scale-125 duration-1000 ease-in-out;
+      @apply overflow-hidden scale-125 duration-1000 ease-in-out;
    }
 
 

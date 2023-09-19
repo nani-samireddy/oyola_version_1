@@ -48,6 +48,23 @@ export default function Stays() {
       )} */}
 
       <HowItWorks />
+
+      {/* Booking form */}
+      <div className="flex flex-col justify-center items-center mt-20">
+        <h2 className="text-5xl font-bold font-dm_sans text-gray-700 my-5 text-center">
+                            Book your stay
+                        </h2>
+      <h2 className="text-2xl font-light font-dm_sans text-gray-400  text-center md:px-6 lg:px-24">
+                            Our executive will contact you within 24 hours to confirm your booking and payment
+                </h2>
+        <form action="https://formsubmit.co/your@email.com" method="POST"  className="flex flex-col my-10">
+        <input type="hidden" name="_template" value="table"/>
+        <input type="hidden" name="_subject" value="New Booking for stays!"/>
+        <input type="text" name="Name" placeholder="Name" className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400" required/>
+        <input type="email" name="Email" placeholder="Email" className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400" required/>
+        <input  type="number" name="Phone" placeholder="Phone" className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400" required/>
+        </form>
+        </div>
     </div>
   );
 }
