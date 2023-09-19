@@ -3,6 +3,7 @@ import SectionComponent from "../../../common/components/section_component/secti
 import { useContext } from "react";
 import { StaysTypesContext } from "../../../contexts/contexts";
 import { HomeModernIcon } from "@heroicons/react/24/outline";
+import HowItWorks from "../../../common/components/how_it_works/how_it_works";
 
 export default function Stays() {
   const [staysTypes, hasData] = useContext(StaysTypesContext);
@@ -46,7 +47,7 @@ export default function Stays() {
         </div>
       )} */}
 
-
+      <HowItWorks />
     </div>
   );
 }
