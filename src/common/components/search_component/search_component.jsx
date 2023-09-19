@@ -63,7 +63,7 @@ export default function SearchComponent() {
           return place.toLowerCase().includes(placeQuery.toLowerCase());
         });
   return (
-    <div className="relative w-full flex flex-col lg:flex-row items-start justify-between gap-10  bg-white bg-opacity-95 backdrop-blur-3xl   p-10 rounded-3xl shadow-xl ">
+    <div className="relative w-full flex flex-col lg:flex-row items-start justify-between gap-10  bg-white bg-opacity-95 backdrop-blur-3xl  p-7 lg:p-10 rounded-3xl shadow-xl ">
       {/* location input */}
       <div className="flex  gap-2  relative items-start justify-center  ">
         <MapPinIcon className="input-component-icon" />
