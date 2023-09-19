@@ -122,6 +122,6 @@ export default {
         "5p": "5%",
       },
     },
-    plugins: ["prettier-plugin-tailwindcss"],
+    plugins: [],
   },
 };

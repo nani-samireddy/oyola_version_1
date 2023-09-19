@@ -132,6 +132,7 @@ export default function SearchComponent() {
           <Popover.Panel className="absolute z-10 mt-16 -translate-x-1/2  w-max h-max left-1/2 top-1/2">
             <div className=" p-6 rounded-2xl shadow-2xl  bg-white">
               <DateRange
+                minDate={new Date()}
                 showSelectionPreview={true}
                 ranges={dateState}
                 onChange={(item) => {
