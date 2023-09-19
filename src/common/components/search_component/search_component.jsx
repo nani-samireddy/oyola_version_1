@@ -129,30 +129,63 @@ export default function SearchComponent() {
             </div>
           </Popover.Button>
 
-          <Popover.Panel className="absolute z-10 mt-16 -translate-x-1/2  w-max h-max left-1/2 top-1/2">
-            <div className=" p-6 rounded-2xl shadow-2xl  bg-white">
-              <DateRange
-                minDate={new Date()}
-                showSelectionPreview={true}
-                ranges={dateState}
-                onChange={(item) => {
-                  setDateState([
-                    {
-                      startDate: formatDate(item.selection.startDate),
-                      endDate: formatDate(item.selection.endDate),
-                      key: "selection",
-                    },
-                  ]);
-                  setDateChanged(true);
-                  console.log(dateState);
-                  // setDateChanged(true);
-                }}
-                editableDateInputs={true}
-                months={2}
-                direction="horizontal"
-              />
-            </div>
-          </Popover.Panel>
+          <Popover.Panel className="absolute z-10 ml-auto left-0 right-0">
+    <div className="p-6 rounded-2xl shadow-2xl bg-white">
+
+      {/* Show month 1 on mobile screens */}
+      <div className="md:hidden"> 
+        <DateRange
+          minDate={new Date()}
+          showDateDisplay={false}
+          showMonthAndYearPickers={false}
+          showPreview={true}
+          showSelectionPreview={true}
+          ranges={dateState}
+          onChange={(item) => {
+            setDateState([
+              {
+                startDate: formatDate(item.selection.startDate),
+                endDate: formatDate(item.selection.endDate),
+                key: "selection",
+              },
+            ]);
+            setDateChanged(true);
+            console.log(dateState);
+          }}
+          editableDateInputs={true}
+          months={1}
+          direction="horizontal"
+        />
+      </div>
+
+      {/* Show month 2 on laptop screens */}
+      <div className="hidden md:block">
+        <DateRange
+          minDate={new Date()}
+          showDateDisplay={false}
+          showMonthAndYearPickers={false}
+          showPreview={true}
+          showSelectionPreview={true}
+          ranges={dateState}
+          onChange={(item) => {
+            setDateState([
+              {
+                startDate: formatDate(item.selection.startDate),
+                endDate: formatDate(item.selection.endDate),
+                key: "selection",
+              },
+            ]);
+            setDateChanged(true);
+            console.log(dateState);
+          }}
+          editableDateInputs={true}
+          months={2}
+          direction="horizontal"
+        />
+      </div>
+
+    </div>
+  </Popover.Panel>
         </Popover>
       </div>
 
@@ -177,7 +210,7 @@ export default function SearchComponent() {
             </div>
           </Popover.Button>
 
-          <Popover.Panel className="absolute z-10 mt-16 -translate-x-1/2 p-3  w-max h-max left-1/2 top-1/2">
+          <Popover.Panel className="absolute z-10 ml-auto p-3  w-max h-max ">
             <div className=" flex flex-col gap-5 p-6 rounded-2xl shadow-2xl bg-white">
               {/* Adults */}
               <div className="flex gap-10 items-start justify-between">
