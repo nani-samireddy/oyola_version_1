@@ -3,7 +3,7 @@ import { StaysTypesContext } from "./contexts";
 import { getStaysCountByType } from "../APIs/Database/database_service";
 
 const StaysTypesProvider = ({ children }) => {
-  const [staysTypes, setStaysTypes] = useState([
+  const [staysTypes, setStaysTypes] = useState(
     [
     {
         key: "64c3449e9fa76210a787f980",
@@ -47,7 +47,7 @@ const StaysTypesProvider = ({ children }) => {
         count: 0,
         
     }
-]
+
   ]);
   const [hasData, setHasData] = useState(true);
 
