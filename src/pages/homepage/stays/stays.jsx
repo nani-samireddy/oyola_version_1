@@ -49,7 +49,7 @@ export default function Stays() {
       <HowItWorks />
 
       {/* Booking form */}
-      <div>
+      <div id="callbackform">
         <CallBackForm/>
       </div>
     </div>
