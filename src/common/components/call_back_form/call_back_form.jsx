@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function CallBackForm() {
+export default function CallBackForm({title, description, form_type}) {
   return (
    <div className="w-full flex flex-col justify-center items-center mt-20">
         <h2 className="text-5xl font-bold font-dm_sans text-gray-700 my-5 text-center">
-                            Book your stay
+                            {title}
                         </h2>
       <h2 className="text-xl lg:text-2xl font-light font-dm_sans text-gray-400  text-center md:px-6 lg:px-24">
                             Our executive will contact you within 24 hours to confirm your booking and payment details.
