@@ -10,7 +10,7 @@ export default function CallBackForm({title, description, form_type}) {
                             Our executive will contact you within 24 hours to confirm your booking and payment details.
                             Or you can call us at <a href="tel:+919618434488" className="text-gray-900 font-semibold">+91 9618434488</a> or <a href="tel:098936293565" className="text-gray-900 font-semibold">098936293565</a> for instant booking.
                 </h2>
-        <form action="https://formsubmit.co/a4c271330781fff43fdb513ce98718" method="POST"  className="flex flex-col my-10 w-full items-center justify-center ">
+        <form action="https://formsubmit.co/vijaynaranji@gmail.com" method="POST"  className="flex flex-col my-10 w-full items-center justify-center ">
         <input type="hidden" name="_template" value="table"/>
         <input type="hidden" name="_subject" value="New Booking for stays!"/>
         <input type="text" name="Name" placeholder="Name" className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400" required/>
