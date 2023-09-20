@@ -50,7 +50,9 @@ export default function Cars() {
 
       {/* Booking form */}
       <div id="callbackform">
-        <CallBackForm/>
+        <CallBackForm
+        title={"Book a car"}
+        />
       </div>
     </div>
   );

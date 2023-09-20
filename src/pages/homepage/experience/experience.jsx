@@ -50,7 +50,9 @@ export default function Experiences() {
 
       {/* Booking form */}
       <div id="callbackform">
-        <CallBackForm/>
+        <CallBackForm
+        title={"Book your Experience"}
+        />
       </div>
     </div>
   );

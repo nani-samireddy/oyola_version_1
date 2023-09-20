@@ -50,7 +50,7 @@ export default function Stays() {
 
       {/* Booking form */}
       <div id="callbackform">
-        <CallBackForm/>
+        <CallBackForm title={"Book your stays"}/>
       </div>
     </div>
   );
