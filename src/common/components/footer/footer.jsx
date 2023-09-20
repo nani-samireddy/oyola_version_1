@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
         {/* places */}
         <div className='text-left'>
-          
+
           <h2 className="text-md text-gray-700   text-left font-poppins font-bold  py-2 ">
             We are at
           </h2>
@@ -68,7 +68,7 @@ export default function Footer() {
         <div class="w-full flex justify-center items-center text-xs pt-10">
           <a href="https://nanisamrieddy.dev/" target="_blank" >
             <span>Made with ♡ by Nani samireddy</span>
-            <span class="md:px-6">|</span>
+            <span class=" px-2 md:px-6">|</span>
             <span>copyright © 2023 oyola.in</span>
           </a>
         </div>
