@@ -82,9 +82,9 @@ export default function Navbar() {
               <button class="bg-gray-100 text-gray-900 px-4 py-2 rounded-3xl hover:bg-gray-600 hover:text-gray-100 duration-500 ease-in-out ">
                 List your property
               </button>
-              <button class="bg-gray-900 text-white px-4 py-2 rounded-3xl hover:bg-gray-800 hover:shadow-md">
-                Sign in
-              </button>
+              <a href="#callbackform" class="bg-gray-900 text-white px-4 py-2 rounded-3xl hover:bg-gray-800 hover:shadow-md">
+                Contact
+              </a>
             </div>
           </div>
         </nav>
