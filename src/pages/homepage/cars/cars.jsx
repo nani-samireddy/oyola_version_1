@@ -2,7 +2,7 @@ import SearchComponent from "../../../common/components/search_component/search_
 import SectionComponent from "../../../common/components/section_component/section_component";
 import { useContext } from "react";
 import { CarsTypesContext } from "../../../contexts/contexts";
-import { HomeModernIcon } from "@heroicons/react/24/outline";
+import { TruckIcon } from "@heroicons/react/24/outline";
 import HowItWorks from "../../../common/components/how_it_works/how_it_works";
 import CallBackForm from "../../../common/components/call_back_form/call_back_form";
 import Footer from "../../../common/components/footer/footer";
@@ -41,7 +41,7 @@ export default function Cars() {
         <SectionComponent
           title="Explore Cars by type"
           data={CarsTypes}
-          CardIcon={HomeModernIcon}
+          CardIcon={TruckIcon}
         />
         {/* {!hasData && (
         <div className="flex justify-center items-center h-[50vh]">
