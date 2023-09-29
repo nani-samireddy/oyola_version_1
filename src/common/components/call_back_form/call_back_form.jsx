@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CallBackForm({ title, description, form_type }) {
+export default function CallBackForm({ title, form_type }) {
   return (
     <div className="w-full flex flex-col justify-center items-center mt-20">
       <h2 className="text-5xl font-bold font-dm_sans text-gray-700 my-5 text-center">
@@ -24,7 +24,11 @@ export default function CallBackForm({ title, description, form_type }) {
         className="flex flex-col my-10 w-full items-center justify-center "
       >
         <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_subject" value="New Booking for stays!" />
+        <input
+          type="hidden"
+          name="_subject"
+          value={`New Booking for ${form_type}!`}
+        />
         <input
           type="text"
           name="Name"
@@ -34,11 +38,14 @@ export default function CallBackForm({ title, description, form_type }) {
         />
         <input
           type="email"
-          name="Email"
+          name="email"
           placeholder="Email"
           className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400"
           required
         />
+        <input type="hidden" name="_captcha" value="false" />
+        {/* <input type="hidden" name="_next" value="https://oyola.in" /> */}
+
         <input
           type="number"
           name="Phone"

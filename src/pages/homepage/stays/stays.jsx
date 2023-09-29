@@ -12,7 +12,7 @@ export default function Stays() {
   const [staysTypes, hasData] = useContext(StaysTypesContext);
   return (
     <>
-      <Navbar currentService={'stays'} />
+      <Navbar currentService={"stays"} />
       <div className="responsive-width ">
         <div className="relative h-max">
           <div className="h-[40vh] lg:h-[65vh] relative flex flex-col mb-20 mt-10 -z-10">
@@ -53,7 +53,7 @@ export default function Stays() {
 
         {/* Booking form */}
         <div id="callbackform">
-          <CallBackForm title={"Book your stays"} />
+          <CallBackForm title={"Book your stays"} form_type={"stays"} />
         </div>
       </div>
       <Footer />

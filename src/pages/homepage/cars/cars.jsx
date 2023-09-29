@@ -12,7 +12,7 @@ export default function Cars() {
   const [CarsTypes, hasData] = useContext(CarsTypesContext);
   return (
     <>
-      <Navbar currentService={'cars'} />
+      <Navbar currentService={"cars"} />
       <div className="responsive-width ">
         <div className="relative h-max">
           <div className="h-[40vh] lg:h-[65vh] relative flex flex-col mb-20 mt-10 -z-10">
@@ -53,7 +53,7 @@ export default function Cars() {
 
         {/* Booking form */}
         <div id="callbackform">
-          <CallBackForm title={"Book a car"} />
+          <CallBackForm title={"Book a car"} form_type={"cars"} />
         </div>
       </div>
       <Footer />
