@@ -19,7 +19,7 @@ export default function CallBackForm({ title, description, form_type }) {
         for instant booking.
       </h2>
       <form
-        action="https://formsubmit.co/vijaynaranji@gmail.com"
+        action="https://formsubmit.co/a4c271f330781fff43fdb513ce9871f8"
         method="POST"
         className="flex flex-col my-10 w-full items-center justify-center "
       >
