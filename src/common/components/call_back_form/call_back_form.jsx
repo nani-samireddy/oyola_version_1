@@ -44,7 +44,7 @@ export default function CallBackForm({ title, form_type }) {
           required
         />
         <input type="hidden" name="_captcha" value="false" />
-        {/* <input type="hidden" name="_next" value="https://oyola.in" /> */}
+        <input type="hidden" name="_next" value="https://oyola.in/thankyou" />
 
         <input
           type="number"

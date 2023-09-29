@@ -4,6 +4,7 @@ import Stays from "../pages/homepage/stays/stays";
 import Cars from "../pages/homepage/cars/cars";
 import Experience from "../pages/homepage/experience/experience";
 import Homepage from "../pages/homepage/home_page";
+import ThankYouPage from "../pages/thankyou/thank_you_page";
 
 export const routes = createBrowserRouter([
   {
@@ -23,5 +24,9 @@ export const routes = createBrowserRouter([
   {
     path: "/experiences",
     element: <Experience />,
+  },
+  {
+    path: "/thankyou",
+    element: <ThankYouPage />,
   },
 ]);
