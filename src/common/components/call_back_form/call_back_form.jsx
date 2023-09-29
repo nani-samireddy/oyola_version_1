@@ -67,6 +67,11 @@ export default function CallBackForm({ title, form_type }) {
           <option value="Trips">Trips</option>
           <option value="Trekking">Trekking</option>
           <option value="Camping">Camping</option>
+          <option value="Tribal Village">Tribal Village experience</option>
+          <option value="Tribal cuisine">Tribal cuisine</option>
+          <option value="Dhimsa Dance">Dhimsa Dance</option>
+          <option value="Waterfalls">Waterfalls</option>
+          <option value="School Trips"> School Trips</option>
           <option value="Others">Others</option>
         </select>
         <input
