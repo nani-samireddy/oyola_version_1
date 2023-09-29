@@ -25,6 +25,9 @@ export default function CallBackForm({title, description, form_type}) {
           <option value="Camping">Camping</option>
           <option value="Others">Others</option>
         </select>
+        <input type="hidden" name="_autoresponse" value="We have recived your message and our executive will reachout to you in 24 hours "/>
+
+
         <textarea name="Message" placeholder="Message" className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400" required></textarea>
         <button type="submit" className="w-full md:w-96 bg-gray-900 text-white rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400">Place a call back</button>
 
