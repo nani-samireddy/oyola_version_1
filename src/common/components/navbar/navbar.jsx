@@ -11,9 +11,6 @@ const services = [
 export default function Navbar({ currentService }) {
   const [selectedService, setSelectedService] = useState(services[0]);
   const [isOpen, setIsOpen] = useState(false);
-  console.log(
-    currentService === "experiences" ? "text-gray-900" : "text-gray-500"
-  );
 
   return (
     <>
