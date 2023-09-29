@@ -4,7 +4,7 @@ import { RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 import { routes } from "./routing/routes";
-import StaysTypesProvider from "./contexts/stays_types_context.jsx";
+// import StaysTypesProvider from "./contexts/stays_types_context.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
