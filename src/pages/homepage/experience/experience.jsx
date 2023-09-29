@@ -18,7 +18,7 @@ export default function Experiences() {
           <div className="h-[40vh] lg:h-[65vh] relative flex flex-col mb-20 mt-10 -z-10">
             <img
               className=" h-full w-full object-cover rounded-2xl saturate-150 brightness-80"
-              src="https://images.unsplash.com/photo-1504598318550-17eba1008a68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2848&q=80"
+              src="https://images.pexels.com/photos/4511088/pexels-photo-4511088.jpeg"
               alt=""
             />
             <div className=" absolute left-0 z-20  top-0 h-full w-full flex flex-col items-center justify-center gap-4">
