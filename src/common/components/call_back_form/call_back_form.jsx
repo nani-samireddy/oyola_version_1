@@ -29,6 +29,9 @@ export default function CallBackForm({ title, form_type }) {
           name="_subject"
           value={`New Booking for ${form_type}!`}
         />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://oyola.in/thankyou" />
+        <input type="hidden" name="_autoresponse" value="your custom message" />
         <input
           type="text"
           name="Name"
@@ -43,8 +46,6 @@ export default function CallBackForm({ title, form_type }) {
           className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400"
           required
         />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://oyola.in/thankyou" />
 
         <input
           type="number"
@@ -74,11 +75,6 @@ export default function CallBackForm({ title, form_type }) {
           <option value="School Trips"> School Trips</option>
           <option value="Others">Others</option>
         </select>
-        <input
-          type="hidden"
-          name="_autoresponse"
-          value="We have recived your message and our executive will reachout to you in 24 hours "
-        />
 
         <textarea
           name="Message"
