@@ -12,7 +12,7 @@ export default function Cars() {
   const [CarsTypes, hasData] = useContext(CarsTypesContext);
   return (
     <>
-      <Navbar />
+      <Navbar currentService={'cars'} />
       <div className="responsive-width ">
         <div className="relative h-max">
           <div className="h-[40vh] lg:h-[65vh] relative flex flex-col mb-20 mt-10 -z-10">

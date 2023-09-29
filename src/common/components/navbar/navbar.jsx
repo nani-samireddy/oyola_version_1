@@ -8,9 +8,9 @@ const services = [
   { id: 3, name: "Experiences", path: "/experiences" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ currentService }) {
   const [selectedService, setSelectedService] = useState(services[0]);
-    const [isOpen,setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -36,17 +36,31 @@ export default function Navbar() {
             } flex-col gap-4 items-start justify-start px-10`}
           >
             <NavLink to={"/stays"}>
-              <span class="text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out  text-gray-500">
+              <span
+                class={`text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out  text-gray-500 ${
+                  currentService == "stays" ? "text-black" : "text-gray-500"
+                }`}
+              >
                 stays
               </span>
             </NavLink>
             <NavLink to={"/cars"}>
-              <span class="text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out   text-gray-500 ">
+              <span
+                class={`text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out  text-gray-500 ${
+                  currentService == "cars" ? "text-black" : "text-gray-500"
+                }`}
+              >
                 Cars
               </span>
             </NavLink>
             <NavLink to={"/experiences"}>
-              <span class=" text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out   text-gray-500">
+              <span
+                class={`text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out  text-gray-500 ${
+                  currentService == "experiences"
+                    ? "text-black"
+                    : "text-gray-500"
+                }`}
+              >
                 Experiences
               </span>
             </NavLink>
@@ -82,7 +96,10 @@ export default function Navbar() {
               <button class="bg-gray-100 text-gray-900 px-4 py-2 rounded-3xl hover:bg-gray-600 hover:text-gray-100 duration-500 ease-in-out ">
                 List your property
               </button>
-              <a href="#callbackform" class="bg-gray-900 text-white px-4 py-2 rounded-3xl hover:bg-gray-800 hover:shadow-md">
+              <a
+                href="#callbackform"
+                class="bg-gray-900 text-white px-4 py-2 rounded-3xl hover:bg-gray-800 hover:shadow-md"
+              >
                 Contact
               </a>
             </div>
@@ -92,5 +109,3 @@ export default function Navbar() {
     </>
   );
 }
-
-

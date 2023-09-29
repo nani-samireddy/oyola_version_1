@@ -12,7 +12,7 @@ export default function Experiences() {
   const [experiencesTypes, hasData] = useContext(ExperiencesTypesContext);
   return (
     <>
-      <Navbar />
+      <Navbar currentService={"experiences"} />
       <div className="responsive-width ">
         <div className="relative h-max">
           <div className="h-[40vh] lg:h-[65vh] relative flex flex-col mb-20 mt-10 -z-10">

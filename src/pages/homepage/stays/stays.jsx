@@ -12,7 +12,7 @@ export default function Stays() {
   const [staysTypes, hasData] = useContext(StaysTypesContext);
   return (
     <>
-      <Navbar />
+      <Navbar currentService={'stays'} />
       <div className="responsive-width ">
         <div className="relative h-max">
           <div className="h-[40vh] lg:h-[65vh] relative flex flex-col mb-20 mt-10 -z-10">
