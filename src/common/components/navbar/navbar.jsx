@@ -37,7 +37,7 @@ export default function Navbar({ currentService }) {
           >
             <NavLink to={"/stays"}>
               <span
-                class={`text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out  text-gray-500 ${
+                class={`text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out ${
                   currentService == "stays" ? "text-black" : "text-gray-500"
                 }`}
               >
@@ -46,7 +46,7 @@ export default function Navbar({ currentService }) {
             </NavLink>
             <NavLink to={"/cars"}>
               <span
-                class={`text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out  text-gray-500 ${
+                class={`text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out   ${
                   currentService == "cars" ? "text-black" : "text-gray-500"
                 }`}
               >
@@ -55,9 +55,9 @@ export default function Navbar({ currentService }) {
             </NavLink>
             <NavLink to={"/experiences"}>
               <span
-                class={`text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out  text-gray-500 ${
+                class={`text-lg  hover:text-gray-900 cursor-pointer duration-500 ease-in-out  ${
                   currentService == "experiences"
-                    ? "text-black"
+                    ? "text-gray-900"
                     : "text-gray-500"
                 }`}
               >
