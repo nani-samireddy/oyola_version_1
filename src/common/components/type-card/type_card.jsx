@@ -10,10 +10,10 @@ export default function TypeCard({ data, CardIcon }) {
           alt=""
         />
       </div>
-      <h1 className="font-poppins text-xl mt-2">{data.type}</h1>
+      <h1 className="font-poppins text-xl mt-2">{data.name}</h1>
       <div className="text-gray-400 text-sm flex items-center gap-2">
-        <CardIcon  className="h-4"/>
-        <span>{data.count + "+ " + data.type}s</span>
+        <CardIcon className="h-4" />
+        <span>{data.type}s</span>
       </div>
     </div>
   );

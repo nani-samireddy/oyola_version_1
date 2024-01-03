@@ -7,6 +7,7 @@ import HowItWorks from "../../../common/components/how_it_works/how_it_works";
 import CallBackForm from "../../../common/components/call_back_form/call_back_form";
 import Footer from "../../../common/components/footer/footer";
 import Navbar from "../../../common/components/navbar/navbar";
+import PrimaryButton from "../../../common/components/buttons/primary_button";
 
 export default function Stays() {
   const [staysTypes, hasData] = useContext(StaysTypesContext);
@@ -32,8 +33,11 @@ export default function Stays() {
             <div className="header-gradient h-full w-full absolute z-10 top-0 left-0 rounded-2xl"></div>
           </div>
           <div className="  -mt-40 lg:-bottom-20 left-0 w-full flex justify-center items-center z-50 px-2">
-            <div className="w-full   lg:w-max">
-              <SearchComponent />
+            <div className="w-full  flex items-center justify-center lg:w-max">
+              {/* <SearchComponent /> */}
+              <a href="#callbackform">
+                <PrimaryButton title="Book Now" />
+              </a>
             </div>
           </div>
         </div>

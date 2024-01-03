@@ -1,6 +1,9 @@
 import React from "react";
 
 export default function CallBackForm({ title, form_type }) {
+  const handleDateInputFocus = (e) => {
+    e.target.type = "date";
+  };
   return (
     <div className="w-full flex flex-col justify-center items-center mt-20">
       <h2 className="text-5xl font-bold font-dm_sans text-gray-700 my-5 text-center">
@@ -24,6 +27,7 @@ export default function CallBackForm({ title, form_type }) {
         className="flex flex-col my-10 w-full items-center justify-center "
       >
         <input type="hidden" name="_template" value="table" />
+
         <input
           type="hidden"
           name="_subject"
@@ -39,6 +43,7 @@ export default function CallBackForm({ title, form_type }) {
           className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400"
           required
         />
+
         <input
           type="email"
           name="email"
@@ -53,6 +58,22 @@ export default function CallBackForm({ title, form_type }) {
           placeholder="Phone"
           className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400"
           required
+        />
+        <input
+          type="text"
+          onFocus={handleDateInputFocus}
+          name="from"
+          id="fromDate"
+          placeholder="Select checkin date"
+          className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400"
+        />
+        <input
+          type="text"
+          onFocus={handleDateInputFocus}
+          name="to"
+          id="toDate"
+          placeholder="Select checkout date"
+          className="w-full md:w-96 border-2 border-gray-200 rounded-lg p-2 my-2 focus:outline-none focus:border-gray-400"
         />
         <select
           name="Type"
