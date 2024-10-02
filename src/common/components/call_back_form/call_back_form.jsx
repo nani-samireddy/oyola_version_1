@@ -12,12 +12,12 @@ export default function CallBackForm({ title, form_type }) {
       <h2 className="text-xl lg:text-2xl font-light font-dm_sans text-gray-400  text-center md:px-6 lg:px-24">
         Our executive will contact you within 24 hours to confirm your booking
         and payment details. Or you can call us at{" "}
-        <a href="tel:+919618434488" className="text-gray-900 font-semibold">
-          +91 9618434488
+        <a href="tel:+919618804163" className="text-gray-900 font-semibold">
+          +91 9618804163
         </a>{" "}
         or{" "}
-        <a href="tel:098936293565" className="text-gray-900 font-semibold">
-          098936293565
+        <a href="tel:08936293565" className="text-gray-900 font-semibold">
+          08936293565
         </a>{" "}
         for instant booking.
       </h2>
